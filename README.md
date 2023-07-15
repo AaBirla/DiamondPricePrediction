@@ -19,3 +19,13 @@ There are 10 independent variables (including id):
 Target variable:
 
 <b>price</b>: Price of the given Diamond.
+
+
+
+
+
+# Exploratory Data Analysis Notebook <br>
+link:https://vscode.dev/github/AaBirla/DiamondPricePredictionproject/blob/main/notebooks/EDA.ipynb
+
+
+

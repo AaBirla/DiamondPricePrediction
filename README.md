@@ -15,6 +15,7 @@ There are 10 independent variables (including id):
 <b>x</b> : Diamond X dimension <br> 
 <b>y</b> : Diamond Y dimension <br> 
 <b>z</b>: Diamond Z dimension <br> 
+<br>
 Target variable:
 
 <b>price</b>: Price of the given Diamond.

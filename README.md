@@ -21,11 +21,33 @@ Target variable:
 <b>price</b>: Price of the given Diamond.
 
 
+# Approach for the project
+## Data Ingestion :
 
+In Data Ingestion phase the data is first read as csv.<br>
+Then the data is split into training and testing and saved as csv file.<br>
+## Data Transformation :
+
+In this phase a ColumnTransformer Pipeline is created.<br>
+for Numeric Variables first SimpleImputer is applied with strategy median , then Standard Scaling is performed on numeric data.<br>
+for Categorical Variables SimpleImputer is applied with most frequent strategy, then ordinal encoding performed , after this data is scaled with Standard Scaler.<br>
+This preprocessor is saved as pickle file.<br>
+## Model Training :
+
+In this phase base model is tested . The best model found was Lasso.<br>
+After this hyperparameter tuning is performed on 'LinearRegression', 'Lasso', 'Ridge', 'Elasticnet'.<br>
+A final VotingRegressor is created which will combine prediction of 'LinearRegression', 'Lasso', 'Ridge', 'Elasticnet'.<br>
+This model is saved as pickle file.<br>
+## Prediction Pipeline :
+
+This pipeline converts given data into dataframe and has various functions to load pickle files and predict the final results in python.<br>
+## Flask App creation :
+
+Flask app is created with User Interface to predict the diamond prices inside a Web Application.<br>
 
 
 # Exploratory Data Analysis Notebook <br>
 link:https://vscode.dev/github/AaBirla/DiamondPricePredictionproject/blob/main/notebooks/EDA.ipynb
 
-
-
+# Model Training Approach Notebook <br>
+link:https://vscode.dev/github/AaBirla/DiamondPricePredictionproject/blob/main/notebooks/Model%20Training.ipynb

@@ -21,6 +21,15 @@ Target variable:
 <b>price</b>: Price of the given Diamond.
 
 
+
+# Screenshot of UI <br>
+
+
+
+![Screenshot (1437)](https://github.com/AaBirla/DiamondPricePredictionproject/assets/119050112/6d1c555b-b305-4364-aa0b-e3f37db6726a)
+
+
+
 # Approach for the project
 ## Data Ingestion :
 

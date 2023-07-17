@@ -1,5 +1,6 @@
 <html>
 <body>
+  <h1>Diamond Price Prediction</h1>
 <form action="{{url_for('predict_datapoint')}}" method="POST">
     <div class="form-group">
         <label for="carat">Carat:</label>
@@ -73,6 +74,6 @@
   <input type="submit" value="Submit">
 </form>
 
-{{final_result}}
+<h2>The Prediction is:{{final_result}}</h2>
 </body>
 </html>

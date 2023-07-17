@@ -54,6 +54,9 @@ class ModelTrainer:
             
             best_model = models[best_model_name]
 
+            if(best_model_name<0.6):
+                raise CustomException("No best model found")
+
             print(f'Best Model Found , Model Name : {best_model_name} , R2 Score : {best_model_score}')
             print('\n====================================================================================\n')
             logging.info(f'Best Model Found , Model Name : {best_model_name} , R2 Score : {best_model_score}')
